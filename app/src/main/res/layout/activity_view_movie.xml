@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewMovie"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="281dp"
+        android:layout_toEndOf="@+id/TextView01"
+        android:id="@+id/textview1"
+        android:text="TextView"/>
+
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/textview1"
+        android:layout_below="@id/textview1"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textAlignment="textEnd"
+        />
+
+    <TextView
+        android:id="@+id/textview3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview2"
+        android:layout_alignStart="@id/textview2"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textAlignment="textEnd"
+        />
+
+    <TextView
+        android:id="@+id/textview4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview3"
+        android:layout_alignStart="@id/textview3"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textAlignment="textEnd"
+        />
+
+    <TextView
+        android:id="@+id/textview5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview4"
+        android:layout_alignStart="@id/textview4"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textAlignment="textEnd"
+        />
+    <TextView
+        android:id="@+id/textview6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview5"
+        android:layout_alignStart="@id/textview5"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textAlignment="textEnd"
+        />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textview2"
+        android:layout_alignParentLeft="true"
+        android:text="ID"/>
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textview2"
+        android:layout_alignBottom="@+id/textview2"
+        android:layout_alignStart="@+id/TextView01"
+        android:text="Judul Sinetron"
+        />
+
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textview3"
+        android:layout_alignBottom="@+id/textview3"
+        android:layout_alignStart="@+id/TextView01"
+        android:text="Tahun Rilis"/>
+
+    <TextView
+        android:id="@+id/TextView04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textview4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignStart="@+id/TextView01"
+        android:text="Sinopsis" />
+
+    <TextView
+        android:id="@+id/TextView05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textview5"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignStart="@+id/TextView01"
+        android:layout_marginStart="0dp"
+        android:text="Sutradara" />
+
+    <TextView
+        android:id="@+id/TextView06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textview6"
+        android:layout_alignBottom="@+id/textview6"
+        android:layout_alignStart="@+id/TextView01"
+        android:text="Produser" />
+
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/TextView01"
+        android:layout_below="@+id/TextView06"
+        android:layout_marginTop="34dp"
+        android:text="KEMBALI"/>
+
+
+
+
+</RelativeLayout>
