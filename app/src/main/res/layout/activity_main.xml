@@ -16,7 +16,7 @@
         android:id="@+id/tombol"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tambah Sinetron"
+        android:text="Tambah Data"
         android:layout_alignParentBottom="true"
 
         />
