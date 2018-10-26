@@ -12,8 +12,15 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity {
+    ArrayList personNames = new ArrayList<>(Arrays.asList("Person 1"));
+    ArrayList personImages = new ArrayList<>(Arrays.asList(R.drawable.guitar));
 
     ListView Listview01;
 
@@ -30,6 +37,12 @@ public class MainActivity extends AppCompatActivity {
         layarutama = this;
         TampilkanList();
 
+        RecyclerView recyclerView = findViewById(R.id.recyclerView);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getApplicationContext());
+        recyclerView.setLayoutManager(linearLayoutManager);
+
+        CustomAdapter customAdapter = new CustomAdapter(MainActivity.this, personNames,personImages);
+        recyclerView.setAdapter(customAdapter);
 
         Button btn2 = (Button) findViewById(R.id.tombol);
         btn2.setOnClickListener(new View.OnClickListener() {
@@ -63,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         //menampilkan list view
-        Listview01 = (ListView) findViewById(R.id.listview1);
+        Listview01 = findViewById(R.id.recyclerView);
         Listview01.setAdapter(new ArrayAdapter<String>(this,android.R.layout.simple_expandable_list_item_1,databaru));
         Listview01.setSelected(true);
         Listview01.setOnItemClickListener(new AdapterView.OnItemClickListener() {

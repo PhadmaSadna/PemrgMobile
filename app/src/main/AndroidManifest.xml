@@ -19,7 +19,8 @@
         <activity android:name=".InsertGuitar" />
         <activity android:name=".ViewGuitar" />
         <activity android:name=".UpdateGuitar" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".rowlayout"></activity>
     </application>
 
 </manifest>
